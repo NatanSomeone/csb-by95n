@@ -20,8 +20,8 @@ function draw() {
   textStyle(NORMAL);
   fill(0);
   textAlign(CENTER);
-  textSize(5);
-  text("johnnnatan\n" + navigator.userAgent, 175, 325);
+  textSize(25);
+  text("johnnnatan", 175, 325);
 
   let display = touches.length + " touches";
   touches.forEach((t) => {
