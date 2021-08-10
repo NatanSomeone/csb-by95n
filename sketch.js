@@ -20,22 +20,13 @@ function draw() {
   textStyle(NORMAL);
   fill(0);
   textAlign(CENTER);
-  textSize(25);
-  text("johnnnatan", 175, 325);
+  textSize(5);
+  text("johnnnatan\n" + navigator.userAgent, 175, 325);
 
   let display = touches.length + " touches";
   touches.forEach((t) => {
-    circle(t.x, t.y, 50);
+    circle(t.x, t.y, 5);
   });
-
-  text(`${accelerationX.toFixed(2)}`, 175, 235);
-}
-let value = 0;
-function deviceMoved() {
-  value = value + 5;
-  if (value > 255) {
-    value = 0;
-  }
 }
 
 // This Redraws the Canvas when resized
